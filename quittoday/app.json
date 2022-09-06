@@ -91,6 +91,13 @@
 				"bar_style": "discrete"
 			},
 			"name": "Cigs"
+		},
+		{
+			"type": "expression",
+			"scope": "entry",
+			"settings": {
+				"expression": "Cigs"
+			}
 		}
 	],
 	"root": [
@@ -106,7 +113,42 @@
 				"set_pairs": [],
 				"filter_pairs": []
 			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"expression": "duration($now - first(date_time))",
+				"prefix": "Days since I decided to quit: "
+			}
+		},
+		{
+			"type": "action",
+			"scope": "root",
+			"settings": {
+				"target_preset": "new",
+				"target": "add(entry)",
+				"set_pairs": [
+					{
+						"name": "Cigs",
+						"value": "2"
+					}
+				],
+				"filter_pairs": [],
+				"label": "Smoked 2 cigarettes"
+			}
 		}
 	],
-	"charts": []
+	"charts": [
+		{
+			"type": "chart",
+			"scope": "charts",
+			"settings": {
+				"group_by": "day",
+				"type": "table",
+				"aggregate_of": "Cigs",
+				"aggregate": "sum"
+			}
+		}
+	]
 }
