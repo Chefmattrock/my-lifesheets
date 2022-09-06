@@ -1,0 +1,16 @@
+{
+	"quittoday": {
+		"name": "QuitToday",
+		"slug": "quittoday",
+		"entry_name": "cigarette",
+		"entries_name": "cigarettes",
+		"description": "cigarette tracker",
+		"private": false,
+		"icon": "☠️",
+		"color": "#721d1d",
+		"storage_type": "",
+		"storage": "",
+		"custom_css": "",
+		"charts_placement": ""
+	}
+}
