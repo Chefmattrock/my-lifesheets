@@ -39,6 +39,10 @@ button:hover:not(:disabled) {
 		background-color: hsl(var(--gray) 97%);
 	}
 
+button:active:not(:disabled) {
+		background-color: hsl(var(--gray) 89%);
+	}
+
 button:disabled {
 		cursor: not-allowed;
 		opacity: .5;
@@ -233,12 +237,12 @@ figure.chart table th {
 }
 
 .type-options {
-	padding: .4em .7em;
+	padding: .3em .7em;
 	border-radius: 2em;
 	background: var(--color, hsl(var(--gray) 50% / .2));
 	font-size: smaller;
 	font-weight: bold;
-	line-height: 1;
+	line-height: 1.3;
 }
 
 [property]:where(img, video) {
@@ -295,3 +299,7 @@ main.charts-below > a[id="stats"],
 select .mv-volatile {
 	display: none;
 }
+
+[data-type="property"][mv-multiple][data-list-separator]:has(+ [mv-multiple])::after {
+		content: attr(data-list-separator);
+	}
