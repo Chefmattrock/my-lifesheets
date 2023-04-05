@@ -1,0 +1,39 @@
+{
+	"entry": [
+		{
+			"date": "2022-09-09",
+			"Duration": 30,
+			"Type": "Yoga flow"
+		},
+		{
+			"date": "2022-09-10",
+			"Duration": 60,
+			"Type": "Yoga flow"
+		},
+		{
+			"date": "2022-09-12",
+			"Duration": 20,
+			"Type": "Foam rolling"
+		},
+		{
+			"date": "2022-09-12",
+			"Duration": 20,
+			"Type": "Legs and abs"
+		},
+		{
+			"date": "2022-09-13",
+			"Duration": 60,
+			"Type": "Yoga flow"
+		},
+		{
+			"date": "2022-09-15",
+			"Duration": 45,
+			"Type": "Yoga flow"
+		},
+		{
+			"date": "2022-09-17",
+			"Duration": 25,
+			"Type": "Foam rolling"
+		}
+	]
+}
